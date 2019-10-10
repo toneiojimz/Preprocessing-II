@@ -185,10 +185,20 @@ img {
   margin: 3% auto;
 }
 .home header nav h3 {
-  font-size: 32px;
+  font-size: 40px;
 }
-.home header nav div .top-links a {
+.home header nav div.links {
+  width: 40%;
+  display: flex;
   text-decoration: none;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.home header nav div.links a {
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 .home .content-section {
   margin: 30px 0;
