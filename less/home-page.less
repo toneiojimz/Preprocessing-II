@@ -1,15 +1,35 @@
 .home {
 
+  header{
 
+ @media(max-width:500px){
+  width: 475px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 0 30px;
+
+ }
+  
+}
+  
 
   header nav{
     display: flex;
     justify-content: space-between;
     margin: 3% auto;
+    border: @navigation-border;
+    align-items: baseline;
+    
+
+    @media(max-width:500px){
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+    }
+  
     
     
-    
-     h3{
+     h1{
       font-size: 40px;
       
     }
@@ -20,36 +40,63 @@
       justify-content: space-around;
       align-items: baseline;
 
+      @media(max-width:500px) {
+        
+      width: 100%;
+      }
+
 
       a{
-        display: flex;
         text-decoration: none;
         font-size: 20px;
         color: black;
       }
+
+
     }
 
-     
     
 
   }
+  .welcome{
+      
+    padding-top: 20px;
+    
+  }
+
+
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 
-   
+   @media(max-width:500px){
+    width: 475px;
+    flex-direction: column;
+    align-items: center;
+
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      
+    @media(max-width: 500px){
+      width: 80%;
+    }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media(max-width: 500px){
+        width: 80%;
+        margin: 0 0 3px 3px;
+      }
 
       img {
         border-radius: 10px;
@@ -60,6 +107,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media(max-width: 500px){
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -79,6 +130,11 @@
     img {
       border-radius: 10px;
     }
+
+    @media(max-width: 500px){
+      width: 80%;
+      flex-direction: center;
+    }
   }
 
   .content-pick {
@@ -86,10 +142,33 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+
+    @media(max-width: 500px){
+      flex-direction: column;
+      align-items: center;
+      width: 480px;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media(max-width: 500px){
+        width: 60%;
+      }
+
+      button{
+        background-color: @button-bg;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        width:70%;
+        border-radius: 10px;
+        
+      }
     }
+    
   }
 }// home
